@@ -14,9 +14,41 @@ section{
   margin: 20px 20px;
 }
 
+.policy> a:first-child{
+  border-right: 1px solid white;
+  padding-right:10px;
+  margin-right: 10px;
+}
+
+.btn{
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.btn-default:hover{
+  transition: none 33ms cubic-bezier(.3,0,0,1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.btn-black{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
 .top-menu ul li{
   display: inline-block;
   text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.menu nav ul li{
+  padding: 10px;
 }
 
 .menu{
@@ -26,17 +58,66 @@ section{
 }
 
 .menu nav ul li a{
+  font-size: 16px;
+}
+
+.fas{
+  margin-right: 15px;
+}
+
+.menu nav ul li a,
+.top-menu ul li a,
+.policy a{
   color: white;
   text-decoration: none;
+}
+
+.top-menu ul li a:hover{
+  border-bottom: 2px solid green;
 }
 
 .menu nav ul li{
   list-style-type: none;
 }
 
-.container-flex,
-.container-flex-2{
+.album{
+  padding: 40px;
+  margin-bottom: 100px;
+  background-image: linear-gradient(to left bottom, black, #4e463a);
+  height: 100vh;
+}
+
+.album p,
+.album h1{
+ color: white;
+ font-weight: bold;
+}
+
+.album p{
+  text-align: center;
+}
+
+.container-flex{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.container-flex .item{
+    margin-right: 15px;
+}
+
+
+
+footer{
+  background-color: #282828;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
+@media all and (max-width:768px){
+
 }

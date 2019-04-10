@@ -55,6 +55,9 @@ section{
   background-color: black;
   height: 100vh;
   position: fixed;
+  width: 15vw;
+  z-index: 1;
+  padding: 10px;
 }
 
 .menu nav ul li a{
@@ -84,7 +87,7 @@ section{
   padding: 40px;
   margin-bottom: 100px;
   background-image: linear-gradient(to left bottom, black, #4e463a);
-  height: 100vh;
+
 }
 
 .album p,
@@ -107,8 +110,6 @@ section{
     margin-right: 15px;
 }
 
-
-
 footer{
   background-color: #282828;
   height: 100px;
@@ -119,5 +120,9 @@ footer{
 }
 
 @media all and (max-width:768px){
-
+  .menu{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 }

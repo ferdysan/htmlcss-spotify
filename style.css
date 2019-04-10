@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section{
+  height: 100vh;
+}
+
+.logo img{
+  max-width: 70%;
+  height: auto;
+  margin: 20px 20px;
+}
+
+.top-menu ul li{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu{
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+}
+
+.menu nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu nav ul li{
+  list-style-type: none;
+}
+
+.container-flex,
+.container-flex-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
